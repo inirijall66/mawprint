@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8D7D7"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flMain"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/rlAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/logo" />
+
+        </RelativeLayout>
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llCurved"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:orientation="horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="pindah2"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#00BCD4"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgPrint"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/print" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgPrint"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Print"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#00BCD4"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgFotocopy"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/fotocopy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgFotocopy"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Fotocopy"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#070100"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            app:strokeColor="#00BCD4"
+            app:strokeWidth="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imgScan"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/scanner" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgScan"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Scan"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"/>
+
+
+
+</LinearLayout>
